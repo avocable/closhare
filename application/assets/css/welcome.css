@@ -1,0 +1,114 @@
+a, a:active, button, button:focus, .btn:focus{ outline: 0 !important; text-decoration: none !important}
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -40px auto;
+}
+#main_content{
+
+}
+#push,
+#footer {
+    height: 40px;
+}
+input {
+   max-width: 100%;
+} 
+#goUp{
+   display: none;
+}
+@media (max-width: 768px) {
+}
+
+#wrap > .container {
+    padding-top: 10px;
+}
+#footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;     
+}
+.container-fluid .bottom {
+    padding: 10px 0;
+    font-size: 92%;
+    margin-right: 11px;  
+}
+#form-login, #form-register {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 40px;
+    overflow: hidden;
+    max-width: 480px !important;
+}
+#login_form, #register_form, #reset_form {
+    margin-bottom: 0;
+    
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+    #form-login {
+        margin: 50px auto 0 auto;
+        float: none;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+    #wrap {
+        margin-top: 30px;
+    }
+    #form-login {
+        margin: 0 auto;
+        float: none;
+    }
+
+    #form-login .control-label {
+        width: 110px;
+    }
+
+    #form-login .controls {
+        margin-left: 130px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    #wrap {
+        margin-top: 50px !important;
+    }    
+    #form-login {
+        margin: 0 auto;
+        float: none;
+    }
+
+    #form-login .control-label {
+        width: 70px;
+    }
+
+    #form-login .controls {
+        margin-left: 80px;
+    }    
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and(max-width: 768px) {
+   input[type='text'],input[type='number'],textarea {font-size:16px !important;}
+    #wrap {
+        margin-top: 50px !important;
+    }  
+    #form-login .control-label {
+        width: 50px;
+    }
+
+    #form-login .controls {
+        margin-left: 70px;
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    #wrap {
+        margin-top: 10px !important;
+    }   
+}

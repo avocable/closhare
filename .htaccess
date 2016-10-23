@@ -1,0 +1,52 @@
+php_flag ignore_repeated_source on
+php_flag log_errors off
+
+Header unset ETag
+FileETag None
+
+php_flag zlib.output_compression on
+Header set X-Content-Type-Options "nosniff"
+
+# 480 weeks
+#<filesMatch "\.(jpg|jpeg|png|gif|js|css|ico)$">
+#Header set Cache-Control "max-age=290304000, public"
+#</filesMatch>
+
+RewriteEngine on
+RewriteBase /
+
+#do not show real theme and assets URI
+##JS CSS file compression
+RewriteRule ^assets/build/(.*)$ application/lib/min/?g=$1 [L,NC]
+RewriteRule ^assets/build/(.*)$ application/lib/min/$1 [L,NC]
+
+#default assets folder hide application ./dir
+RewriteRule ^assets/(.*)$ application/assets/$1 [NC]
+
+#prepare captcha image URI
+RewriteRule ^captcha.png application/lib/captcha.image.php [NC,L]
+
+#shared items page
+RewriteRule ^share/(.*)$  application/view/outbox/share.php?item=$1 [NC,L,QSA]
+
+RewriteCond %{DOCUMENT_ROOT}/files/$1 -f
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ files/$1 [L]
+
+
+RewriteCond %{DOCUMENT_ROOT}/files/$1/view/$ !-f
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)/view/(.*)/(.*)\/$ application/view/outbox/Image.php?uidir=$1&reso=$2&image=$3 [NC,L,QSA]
+
+##required
+RewriteCond %{DOCUMENT_ROOT}/files/$1/view/$ !-f
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)/view/(.*\.(png|gif|jpg|jpeg|/)) application/view/outbox/Image.php?uidir=$1&image=$2 [NC,L,QSA]
+
+#Firefox bug for font files on cdn servers.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|font.css)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>

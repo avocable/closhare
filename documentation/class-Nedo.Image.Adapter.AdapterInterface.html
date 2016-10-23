@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface Nedo\Image\Adapter\AdapterInterface | Closhare</title>
+
+	<script type="text/javascript" src="resources/combined.js?3104663864"></script>
+	<script type="text/javascript" src="elementlist.js?1738243274"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Nedo.html">Nedo<span></span></a>
+						<ul>
+				<li><a href="namespace-Nedo.Cache.html">Cache</a>
+						</li>
+				<li class="active"><a href="namespace-Nedo.Image.html">Image<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Nedo.Image.Adapter.html">Adapter</a>
+						</li>
+				<li><a href="namespace-Nedo.Image.Source.html">Source</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Nedo.Image.Adapter.Adapter.html">Adapter</a></li>
+				<li><a href="class-Nedo.Image.Adapter.Common.html">Common</a></li>
+				<li><a href="class-Nedo.Image.Adapter.GD.html">GD</a></li>
+				<li><a href="class-Nedo.Image.Adapter.Imagick.html">Imagick</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-Nedo.Image.Adapter.AdapterInterface.html">AdapterInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Nedo.Image.Adapter.html" title="Summary of Nedo\Image\Adapter"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface AdapterInterface</h1>
+
+
+	<div class="description">
+	
+<p>all the functions / methods to work on images</p>
+
+<p>if changing anything please also add it to \Nedo\Image\Image</p>
+
+	</div>
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-Nedo.Image.Adapter.Adapter.html">Nedo\Image\Adapter\Adapter</a>
+	</div>
+
+	<div>
+		<h4>Indirect known implementers</h4>
+			<a href="class-Nedo.Image.Adapter.Common.html">Nedo\Image\Adapter\Common</a>, 
+			<a href="class-Nedo.Image.Adapter.GD.html">Nedo\Image\Adapter\GD</a>, 
+			<a href="class-Nedo.Image.Adapter.Imagick.html">Nedo\Image\Adapter\Imagick</a>
+	</div>
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Nedo.html">Nedo</a>\<a href="namespace-Nedo.Image.html">Image</a>\<a href="namespace-Nedo.Image.Adapter.html">Adapter</a><br />
+		
+
+				<b>Author:</b>
+				wodka &lt;<a
+href="mailto:michael.schramm&#64;gmail.com">michael.schramm&#64;<!---->gmail.com</a>&gt;<br />
+		<b>Located at</b> application/lib/image/Adapter/AdapterInterface.php<br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setSource" id="_setSource">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setSource">#</a>
+		<code>setSource( <span><code><a href="class-Nedo.Image.Source.Source.html">Nedo\Image\Source\Source</a></code> <var>$source</var></span> )</code>
+
+		<div class="description short">
+			
+<p>set the image source for the adapter</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>set the image source for the adapter</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$source</var></dt>
+					<dd><code><code><a href="class-Nedo.Image.Source.Source.html">Nedo\Image\Source\Source</a></code></code><br>$source</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getResource" id="_getResource">
+
+		<td class="attributes"><code>
+			 public 
+			resource
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getResource">#</a>
+		<code>getResource( )</code>
+
+		<div class="description short">
+			
+<p>get the raw resource</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>get the raw resource</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>resource</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getName" id="_getName">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getName">#</a>
+		<code>getName( )</code>
+
+		<div class="description short">
+			
+<p>Gets the name of the adapter</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the name of the adapter</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="width" id="_width">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_width">#</a>
+		<code>width( )</code>
+
+		<div class="description short">
+			
+<p>Image width</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Image width</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="height" id="_height">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_height">#</a>
+		<code>height( )</code>
+
+		<div class="description short">
+			
+<p>Image height</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Image height</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="init" id="_init">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_init">#</a>
+		<code>init( )</code>
+
+		<div class="description short">
+			
+<p>Init the resource</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Init the resource</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="saveGif" id="_saveGif">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_saveGif">#</a>
+		<code>saveGif( <span>mixed <var>$file</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Save the image as a gif</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Save the image as a gif</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="savePng" id="_savePng">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_savePng">#</a>
+		<code>savePng( <span>mixed <var>$file</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Save the image as a png</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Save the image as a png</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="saveJpeg" id="_saveJpeg">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_saveJpeg">#</a>
+		<code>saveJpeg( <span>mixed <var>$file</var></span>, <span>mixed <var>$quality</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Save the image as a jpeg</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Save the image as a jpeg</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="cropResize" id="_cropResize">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_cropResize">#</a>
+		<code>cropResize( <span>integer <var>$width</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$height</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$background</var> = <span class="php-num">0xffffff</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Works as resize() excepts that the layout will be cropped</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Works as resize() excepts that the layout will be cropped</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd><code>integer</code><br>$width the width</dd>
+					<dt><var>$height</var></dt>
+					<dd><code>integer</code><br>$height the height</dd>
+					<dt><var>$background</var></dt>
+					<dd><code>integer</code><br>$background the background</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="scaleResize" id="_scaleResize">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_scaleResize">#</a>
+		<code>scaleResize( <span>integer <var>$width</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$height</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$background</var> = <span class="php-num">0xffffff</span></span>, <span>boolean <var>$crop</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Resize the image preserving scale. Can enlarge it.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Resize the image preserving scale. Can enlarge it.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd><code>integer</code><br>$width the width</dd>
+					<dt><var>$height</var></dt>
+					<dd><code>integer</code><br>$height the height</dd>
+					<dt><var>$background</var></dt>
+					<dd><code>integer</code><br>$background the background</dd>
+					<dt><var>$crop</var></dt>
+					<dd><code>boolean</code><br>$crop</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="resize" id="_resize">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_resize">#</a>
+		<code>resize( <span>integer <var>$width</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$height</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$background</var> = <span class="php-num">0xffffff</span></span>, <span>boolean <var>$force</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$rescale</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$crop</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Resizes the image. It will never be enlarged.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Resizes the image. It will never be enlarged.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd><code>integer</code><br>$width the width</dd>
+					<dt><var>$height</var></dt>
+					<dd><code>integer</code><br>$height the height</dd>
+					<dt><var>$background</var></dt>
+					<dd><code>integer</code><br>$background the background</dd>
+					<dt><var>$force</var></dt>
+					<dd><code>boolean</code><br>$force</dd>
+					<dt><var>$rescale</var></dt>
+					<dd><code>boolean</code><br>$rescale</dd>
+					<dt><var>$crop</var></dt>
+					<dd><code>boolean</code><br>$crop</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="crop" id="_crop">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_crop">#</a>
+		<code>crop( <span>integer <var>$x</var></span>, <span>integer <var>$y</var></span>, <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Crops the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Crops the image</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$x</var></dt>
+					<dd><code>integer</code><br>$x the top-left x position of the crop box</dd>
+					<dt><var>$y</var></dt>
+					<dd><code>integer</code><br>$y the top-left y position of the crop box</dd>
+					<dt><var>$width</var></dt>
+					<dd><code>integer</code><br>$width the width of the crop box</dd>
+					<dt><var>$height</var></dt>
+					<dd><code>integer</code><br>$height the height of the crop box</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="enableProgressive" id="_enableProgressive">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_enableProgressive">#</a>
+		<code>enableProgressive( )</code>
+
+		<div class="description short">
+			
+<p>enable progressive image loading</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>enable progressive image loading</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="forceResize" id="_forceResize">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_forceResize">#</a>
+		<code>forceResize( <span>integer <var>$width</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$height</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$background</var> = <span class="php-num">0xffffff</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Resizes the image forcing the destination to have exactly the given width and
+the height</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Resizes the image forcing the destination to have exactly the given width and
+the height</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd><code>integer</code><br>$width the width</dd>
+					<dt><var>$height</var></dt>
+					<dd><code>integer</code><br>$height the height</dd>
+					<dt><var>$background</var></dt>
+					<dd><code>integer</code><br>$background the background</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="zoomCrop" id="_zoomCrop">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_zoomCrop">#</a>
+		<code>zoomCrop( <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span>, <span>integer <var>$background</var> = <span class="php-num">0xffffff</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Perform a zoom crop of the image to desired width and height</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Perform a zoom crop of the image to desired width and height</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd><code>integer</code><br>$width Desired width</dd>
+					<dt><var>$height</var></dt>
+					<dd><code>integer</code><br>$height Desired height</dd>
+					<dt><var>$background</var></dt>
+					<dd><code>integer</code><br>$background</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fillBackground" id="_fillBackground">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fillBackground">#</a>
+		<code>fillBackground( <span>integer <var>$background</var> = <span class="php-num">0xffffff</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Fills the image background to $bg if the image is transparent</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Fills the image background to $bg if the image is transparent</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$background</var></dt>
+					<dd><code>integer</code><br>$background background color</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="negate" id="_negate">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_negate">#</a>
+		<code>negate( )</code>
+
+		<div class="description short">
+			
+<p>Negates the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Negates the image</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="brightness" id="_brightness">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_brightness">#</a>
+		<code>brightness( <span>integer <var>$brightness</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Changes the brightness of the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Changes the brightness of the image</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$brightness</var></dt>
+					<dd><code>integer</code><br>$brightness the brightness</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="contrast" id="_contrast">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_contrast">#</a>
+		<code>contrast( <span>integer <var>$contrast</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Contrasts the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Contrasts the image</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$contrast</var></dt>
+					<dd><code>integer</code><br>$contrast the contrast [-100, 100]</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="grayscale" id="_grayscale">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_grayscale">#</a>
+		<code>grayscale( )</code>
+
+		<div class="description short">
+			
+<p>Apply a grayscale level effect on the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Apply a grayscale level effect on the image</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="emboss" id="_emboss">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_emboss">#</a>
+		<code>emboss( )</code>
+
+		<div class="description short">
+			
+<p>Emboss the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Emboss the image</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="smooth" id="_smooth">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_smooth">#</a>
+		<code>smooth( <span>integer <var>$p</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Smooth the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Smooth the image</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$p</var></dt>
+					<dd><code>integer</code><br>$p value between [-10,10]</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sharp" id="_sharp">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sharp">#</a>
+		<code>sharp( )</code>
+
+		<div class="description short">
+			
+<p>Sharps the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sharps the image</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="edge" id="_edge">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_edge">#</a>
+		<code>edge( )</code>
+
+		<div class="description short">
+			
+<p>Edges the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Edges the image</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="colorize" id="_colorize">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_colorize">#</a>
+		<code>colorize( <span>integer <var>$red</var></span>, <span>integer <var>$green</var></span>, <span>integer <var>$blue</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Colorize the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Colorize the image</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$red</var></dt>
+					<dd><code>integer</code><br>$red value in range [-255, 255]</dd>
+					<dt><var>$green</var></dt>
+					<dd><code>integer</code><br>$green value in range [-255, 255]</dd>
+					<dt><var>$blue</var></dt>
+					<dd><code>integer</code><br>$blue value in range [-255, 255]</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sepia" id="_sepia">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sepia">#</a>
+		<code>sepia( )</code>
+
+		<div class="description short">
+			
+<p>apply sepia to the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>apply sepia to the image</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="merge" id="_merge">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_merge">#</a>
+		<code>merge( <span><code><a href="class-Nedo.Image.Image.html">Nedo\Image\Image</a></code> <var>$other</var></span>, <span>integer <var>$x</var> = <span class="php-num">0</span></span>, <span>integer <var>$y</var> = <span class="php-num">0</span></span>, <span>integer <var>$width</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$height</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Merge with another image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Merge with another image</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$other</var></dt>
+					<dd><code><code><a href="class-Nedo.Image.Image.html">Nedo\Image\Image</a></code></code><br>$other</dd>
+					<dt><var>$x</var></dt>
+					<dd><code>integer</code><br>$x</dd>
+					<dt><var>$y</var></dt>
+					<dd><code>integer</code><br>$y</dd>
+					<dt><var>$width</var></dt>
+					<dd><code>integer</code><br>$width</dd>
+					<dt><var>$height</var></dt>
+					<dd><code>integer</code><br>$height</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rotate" id="_rotate">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_rotate">#</a>
+		<code>rotate( <span>float <var>$angle</var></span>, <span>integer <var>$background</var> = <span class="php-num">0xffffff</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Rotate the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Rotate the image</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$angle</var></dt>
+					<dd><code>float</code><br>$angle</dd>
+					<dt><var>$background</var></dt>
+					<dd><code>integer</code><br>$background</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fill" id="_fill">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fill">#</a>
+		<code>fill( <span>integer <var>$color</var> = <span class="php-num">0xffffff</span></span>, <span>integer <var>$x</var> = <span class="php-num">0</span></span>, <span>integer <var>$y</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Fills the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Fills the image</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$color</var></dt>
+					<dd><code>integer</code><br>$color</dd>
+					<dt><var>$x</var></dt>
+					<dd><code>integer</code><br>$x</dd>
+					<dt><var>$y</var></dt>
+					<dd><code>integer</code><br>$y</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="write" id="_write">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_write">#</a>
+		<code>write( <span>string <var>$font</var></span>, <span>string <var>$text</var></span>, <span>integer <var>$x</var> = <span class="php-num">0</span></span>, <span>integer <var>$y</var> = <span class="php-num">0</span></span>, <span>integer <var>$size</var> = <span class="php-num">12</span></span>, <span>integer <var>$angle</var> = <span class="php-num">0</span></span>, <span>integer <var>$color</var> = <span class="php-num">0x000000</span></span>, <span>string <var>$align</var> = <span class="php-quote">'left'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>write text to the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>write text to the image</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$font</var></dt>
+					<dd><code>string</code><br>$font</dd>
+					<dt><var>$text</var></dt>
+					<dd><code>string</code><br>$text</dd>
+					<dt><var>$x</var></dt>
+					<dd><code>integer</code><br>$x</dd>
+					<dt><var>$y</var></dt>
+					<dd><code>integer</code><br>$y</dd>
+					<dt><var>$size</var></dt>
+					<dd><code>integer</code><br>$size</dd>
+					<dt><var>$angle</var></dt>
+					<dd><code>integer</code><br>$angle</dd>
+					<dt><var>$color</var></dt>
+					<dd><code>integer</code><br>$color</dd>
+					<dt><var>$align</var></dt>
+					<dd><code>string</code><br>$align</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rectangle" id="_rectangle">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_rectangle">#</a>
+		<code>rectangle( <span>integer <var>$x1</var></span>, <span>integer <var>$y1</var></span>, <span>integer <var>$x2</var></span>, <span>integer <var>$y2</var></span>, <span>integer <var>$color</var></span>, <span>boolean <var>$filled</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Draws a rectangle</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Draws a rectangle</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$x1</var></dt>
+					<dd><code>integer</code><br>$x1</dd>
+					<dt><var>$y1</var></dt>
+					<dd><code>integer</code><br>$y1</dd>
+					<dt><var>$x2</var></dt>
+					<dd><code>integer</code><br>$x2</dd>
+					<dt><var>$y2</var></dt>
+					<dd><code>integer</code><br>$y2</dd>
+					<dt><var>$color</var></dt>
+					<dd><code>integer</code><br>$color</dd>
+					<dt><var>$filled</var></dt>
+					<dd><code>boolean</code><br>$filled</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="roundedRectangle" id="_roundedRectangle">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_roundedRectangle">#</a>
+		<code>roundedRectangle( <span>integer <var>$x1</var></span>, <span>integer <var>$y1</var></span>, <span>integer <var>$x2</var></span>, <span>integer <var>$y2</var></span>, <span>integer <var>$radius</var></span>, <span>integer <var>$color</var></span>, <span>boolean <var>$filled</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Draws a rounded rectangle</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Draws a rounded rectangle</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$x1</var></dt>
+					<dd><code>integer</code><br>$x1</dd>
+					<dt><var>$y1</var></dt>
+					<dd><code>integer</code><br>$y1</dd>
+					<dt><var>$x2</var></dt>
+					<dd><code>integer</code><br>$x2</dd>
+					<dt><var>$y2</var></dt>
+					<dd><code>integer</code><br>$y2</dd>
+					<dt><var>$radius</var></dt>
+					<dd><code>integer</code><br>$radius</dd>
+					<dt><var>$color</var></dt>
+					<dd><code>integer</code><br>$color</dd>
+					<dt><var>$filled</var></dt>
+					<dd><code>boolean</code><br>$filled</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="line" id="_line">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_line">#</a>
+		<code>line( <span>integer <var>$x1</var></span>, <span>integer <var>$y1</var></span>, <span>integer <var>$x2</var></span>, <span>integer <var>$y2</var></span>, <span>integer <var>$color</var> = <span class="php-num">0x000000</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Draws a line</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Draws a line</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$x1</var></dt>
+					<dd><code>integer</code><br>$x1</dd>
+					<dt><var>$y1</var></dt>
+					<dd><code>integer</code><br>$y1</dd>
+					<dt><var>$x2</var></dt>
+					<dd><code>integer</code><br>$x2</dd>
+					<dt><var>$y2</var></dt>
+					<dd><code>integer</code><br>$y2</dd>
+					<dt><var>$color</var></dt>
+					<dd><code>integer</code><br>$color</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ellipse" id="_ellipse">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ellipse">#</a>
+		<code>ellipse( <span>integer <var>$cx</var></span>, <span>integer <var>$cy</var></span>, <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span>, <span>integer <var>$color</var> = <span class="php-num">0x000000</span></span>, <span>boolean <var>$filled</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Draws an ellipse</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Draws an ellipse</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cx</var></dt>
+					<dd><code>integer</code><br>$cx</dd>
+					<dt><var>$cy</var></dt>
+					<dd><code>integer</code><br>$cy</dd>
+					<dt><var>$width</var></dt>
+					<dd><code>integer</code><br>$width</dd>
+					<dt><var>$height</var></dt>
+					<dd><code>integer</code><br>$height</dd>
+					<dt><var>$color</var></dt>
+					<dd><code>integer</code><br>$color</dd>
+					<dt><var>$filled</var></dt>
+					<dd><code>boolean</code><br>$filled</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="circle" id="_circle">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_circle">#</a>
+		<code>circle( <span>integer <var>$cx</var></span>, <span>integer <var>$cy</var></span>, <span>integer <var>$r</var></span>, <span>integer <var>$color</var> = <span class="php-num">0x000000</span></span>, <span>boolean <var>$filled</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Draws a circle</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Draws a circle</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cx</var></dt>
+					<dd><code>integer</code><br>$cx</dd>
+					<dt><var>$cy</var></dt>
+					<dd><code>integer</code><br>$cy</dd>
+					<dt><var>$r</var></dt>
+					<dd><code>integer</code><br>$r</dd>
+					<dt><var>$color</var></dt>
+					<dd><code>integer</code><br>$color</dd>
+					<dt><var>$filled</var></dt>
+					<dd><code>boolean</code><br>$filled</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="polygon" id="_polygon">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_polygon">#</a>
+		<code>polygon( <span>array <var>$points</var></span>, <span>integer <var>$color</var></span>, <span>boolean <var>$filled</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Draws a polygon</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Draws a polygon</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$points</var></dt>
+					<dd><code>array</code><br>$points</dd>
+					<dt><var>$color</var></dt>
+					<dd><code>integer</code><br>$color</dd>
+					<dt><var>$filled</var></dt>
+					<dd><code>boolean</code><br>$filled</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Closhare API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

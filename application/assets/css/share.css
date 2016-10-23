@@ -1,0 +1,166 @@
+body{
+    margin-right: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: #FFF;
+    height: 100%;
+}
+
+ul{
+   margin: 0;
+}
+#wrap{
+   margin-top: 60px;
+   overflow: hidden;
+   height: auto;
+}
+.navbar-inner{
+   min-height: 18px;
+}
+.dir_ex{
+   z-index:4;
+   position: relative;
+   padding: 5px;
+   margin:10px 0;
+   background: #B2CDFB;
+   color: #FFF;
+   line-height: 24px;
+   cursor: default;
+   height: 24px;
+   font-weight: bold;
+}
+.dir_ex .fltrt{
+   color: #4285F4;
+   line-height: 24px;
+   margin: 0;
+}
+
+.dir_ex i.fo, .dir_ex .sfo{
+   
+   margin-right: 10px;
+   font-size: 24px;
+   text-shadow: 1px 0 0 #E0EBFD;
+}
+.dir_ex .sfo{
+   font-size: 15px;
+}
+.dir_ex .sfo a{
+   margin-right: 10px;
+}
+#share{
+   margin: 0;
+}
+#share li.item{
+   background-color: #FFF;
+   min-height: 150px;
+   position: relative;
+   padding-bottom: 15px;
+}
+
+/*fix audio li item on sharing*/
+#share li.item.audio .thumbnail{
+   padding-top: 60px;
+}
+
+#share li.span12.active{
+   margin-left: 0 !important;
+}
+#share img{
+/*   display: none;*/
+}
+#share img.active{
+   margin: 0;
+   display: inline-block;
+   *display: inline;
+   zoom: 1;
+   max-width : 100%;
+}
+#share .thumbnail{
+   border-radius: 0;
+   text-align: center;
+}
+.thumbnail .caption{
+   word-break: break-all;
+   color: #999;
+}
+.vibtn{
+   width: 100%;
+   height: 100%;
+   min-height: 100px;
+   display: block;
+}
+#share li.item:before{
+   font-family: "FontAwesome";
+   text-align: center;
+   display: inline-block;
+   line-height: 100%;
+   width: 100%;
+   top: 20px;
+   position: absolute;
+   font-size: 100px;
+   color: #FAFAFA;
+}
+#share li.item.other:before{
+   content: "\f187";
+}
+#share li.item.image:before{
+   content: "\f03e";
+}
+#share li.item.video:before{
+   content: "\f008";
+}
+#share li.item.audio:before{
+   content: "\f001";
+}
+#share li.item.document:before{
+   content: "\f02d";
+}
+#share li.item:after{
+   content: "";
+}
+.download {
+   width: 100%;
+   position: relative;
+   min-height: 150px;
+}
+.shareit{
+   position: absolute; 
+   background-color: #CCC; 
+   background-color: rgba(51,51,51,0.6); 
+   padding: 10px; 
+   border-color: #999;
+   border: 1px solid rgba(0,0,0,0.9);
+   right:4px; top: 4px;
+   z-index: 9;
+   left: 4px;
+   display: none;
+   height: 30px;
+}
+.audio .shareit{
+    background-color: #FAFAFA;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.shareit a.btn>i{
+   font-size: 14px;
+}
+#footer{
+   height: 24px;
+}
+#footer .container-fluid .bottom{
+   padding:3px 0;
+}
+.item{
+  vertical-align: top;
+  margin: 0 !important;
+  margin-bottom: 10px !important;
+}
+.item.w3{
+   width: 20%;
+}
+.item.w6{
+   width: 50%;
+}
+.item.w12{
+   width: 100%;
+}

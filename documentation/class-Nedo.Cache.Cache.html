@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Nedo\Cache\Cache | Closhare</title>
+
+	<script type="text/javascript" src="resources/combined.js?3104663864"></script>
+	<script type="text/javascript" src="elementlist.js?1738243274"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Nedo.html">Nedo<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Nedo.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-Nedo.Image.html">Image<span></span></a>
+						<ul>
+				<li><a href="namespace-Nedo.Image.Adapter.html">Adapter</a>
+						</li>
+				<li><a href="namespace-Nedo.Image.Source.html">Source</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Nedo.Cache.Cache.html">Cache</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Nedo.Cache.html" title="Summary of Nedo\Cache"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Cache</h1>
+
+
+	<div class="description">
+	
+<p>Cache system for image files</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Nedo.html">Nedo</a>\<a href="namespace-Nedo.Cache.html">Cache</a><br />
+		
+
+				<b>Author:</b>
+				Nedo &lt;<a href="mailto:nedox&#64;xneda.com">nedox&#64;<!---->xneda.com</a>&gt;<br />
+		<b>Located at</b> application/lib/image/Cache/Cache.php<br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code>__construct( <span>mixed <var>$cacheDirectory</var> = <span class="php-quote">'cache'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Constructs the cache system</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructs the cache system</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCacheDirectory" id="_setCacheDirectory">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCacheDirectory">#</a>
+		<code>setCacheDirectory( <span>mixed <var>$cacheDirectory</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the cache directory</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the cache directory</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cacheDirectory</var></dt>
+					<dd><code>mixed</code><br>$cacheDirectory the cache directory</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCacheDirectory" id="_getCacheDirectory">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCacheDirectory">#</a>
+		<code>getCacheDirectory( )</code>
+
+		<div class="description short">
+			
+<p>Gets the cache directory</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the cache directory</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>the cache directory<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setActualCacheDirectory" id="_setActualCacheDirectory">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setActualCacheDirectory">#</a>
+		<code>setActualCacheDirectory( <span>mixed <var>$actualCacheDirectory</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the actual cache directory</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the actual cache directory</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getActualCacheDirectory" id="_getActualCacheDirectory">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getActualCacheDirectory">#</a>
+		<code>getActualCacheDirectory( )</code>
+
+		<div class="description short">
+			
+<p>Returns the actual cache directory</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the actual cache directory</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPrefixSize" id="_setPrefixSize">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPrefixSize">#</a>
+		<code>setPrefixSize( <span>mixed <var>$prefixSize</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Change the prefix size</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Change the prefix size</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$prefixSize</var></dt>
+					<dd><code>mixed</code><br>$prefixSize the size of the prefix directories</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="mkdir" id="_mkdir">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_mkdir">#</a>
+		<code>mkdir( <span>mixed <var>$directory</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Creates a directory</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates a directory</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$directory</var></dt>
+					<dd><code>mixed</code><br>$directory, the target directory</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCacheFile" id="_getCacheFile">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCacheFile">#</a>
+		<code>getCacheFile( <span>mixed <var>$filename</var></span>, <span>mixed <var>$actual</var> = <span class="php-keyword1">false</span></span>, <span>mixed <var>$mkdir</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Gets the cache file name</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the cache file name</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd><code>mixed</code><br>$filename, the name of the cache file</dd>
+					<dt><var>$actual</var></dt>
+					<dd><code>mixed</code><br>$actual get the actual file or the public file</dd>
+					<dt><var>$mkdir</var></dt>
+					<dd><code>mixed</code><br>$mkdir, a boolean to enable/disable the construction of the cache file directory</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkConditions" id="_checkConditions">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkConditions">#</a>
+		<code>checkConditions( <span>mixed <var>$cacheFile</var></span>, <span>array <var>$conditions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Checks that the cache conditions are respected</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks that the cache conditions are respected</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cacheFile</var></dt>
+					<dd><code>mixed</code><br>$cacheFile the cache file</dd>
+					<dt><var>$conditions</var></dt>
+					<dd><code>mixed</code><br>$conditions an array of conditions to check</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="exists" id="_exists">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_exists">#</a>
+		<code>exists( <span>mixed <var>$filename</var></span>, <span>array <var>$conditions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Checks if the targt filename exists in the cache and if the conditions are
+respected</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks if the targt filename exists in the cache and if the conditions are
+respected</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd><code>mixed</code><br>$filename the filename</dd>
+					<dt><var>$conditions</var></dt>
+					<dd><code>mixed</code><br>$conditions the conditions to respect</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="check" id="_check">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_check">#</a>
+		<code>check( <span>mixed <var>$filename</var></span>, <span>array <var>$conditions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Alias for exists</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Alias for exists</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="write" id="_write">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_write">#</a>
+		<code>write( <span>mixed <var>$filename</var></span>, <span>mixed <var>$contents</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Write data in the cache</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Write data in the cache</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code>get( <span>mixed <var>$filename</var></span>, <span>array <var>$conditions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Get data from the cache</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get data from the cache</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isRemote" id="_isRemote">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isRemote">#</a>
+		<code>isRemote( <span>mixed <var>$file</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Is this URL remote?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is this URL remote?</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOrCreate" id="_getOrCreate">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOrCreate">#</a>
+		<code>getOrCreate( <span>mixed <var>$filename</var></span>, <span>array <var>$conditions</var> = <span class="php-keyword1">array</span>()</span>, <span><code><a href="class-Closure.html">Closure</a></code> <var>$function</var></span>, <span>mixed <var>$file</var> = <span class="php-keyword1">false</span></span>, <span>mixed <var>$actual</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Get or create the cache entry</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get or create the cache entry</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd><code>mixed</code><br>$filename the cache file name</dd>
+					<dt><var>$conditions</var></dt>
+					<dd><code>mixed</code><br>$conditions an array of conditions about expiration</dd>
+					<dt><var>$function</var></dt>
+					<dd><code>mixed</code><br>$function the closure to call if the file does not exists</dd>
+					<dt><var>$file</var></dt>
+					<dd><code>mixed</code><br>$file returns the cache file or the file contents</dd>
+					<dt><var>$actual</var></dt>
+					<dd><code>mixed</code><br>$actual returns the actual cache file</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOrCreateFile" id="_getOrCreateFile">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOrCreateFile">#</a>
+		<code>getOrCreateFile( <span>mixed <var>$filename</var></span>, <span>array <var>$conditions</var> = <span class="php-keyword1">array</span>()</span>, <span><code><a href="class-Closure.html">Closure</a></code> <var>$function</var></span>, <span>mixed <var>$actual</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Alias to getOrCreate with $file = true</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Alias to getOrCreate with $file = true</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="cacheDirectory" id="$cacheDirectory">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+<var>$cacheDirectory</var>		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$cacheDirectory" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Cache directory</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Cache directory</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="actualCacheDirectory" id="$actualCacheDirectory">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+<var>$actualCacheDirectory</var>		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$actualCacheDirectory" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Use a different directory as actual cache</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Use a different directory as actual cache</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="prefixSize" id="$prefixSize">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+<var>$prefixSize</var>		</td>
+		<td class="value"><code><span class="php-num">0</span></code></td>
+		<td class="description"><div>
+			<a href="#$prefixSize" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Closhare API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

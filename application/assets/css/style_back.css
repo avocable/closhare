@@ -1,0 +1,1676 @@
+html{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    height: 100%;
+}
+html.off{
+   background-color: #FAFAFA;
+}
+body{
+    margin-right: 250px;
+    padding-top: 0;
+    transition: margin 500ms ease 0s;
+    overflow: hidden;
+    background-color: #EEEEF6;
+    color: #0B0B0B;
+}
+a, a:active, button, button:focus, .btn:focus{ outline: 0 !important; text-decoration: none !important}
+a:hover{ text-decoration: none !important}
+a, input, button {
+    -ms-touch-action: none !important;
+}
+.table{ margin-bottom: 0;}
+.form-horizontal .table .control-group {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.table th, .table td{
+    cursor: default;
+}
+.table th{ font-size: 13px}
+.table td{ font-size: 11px;}
+.table td i, .table td button{ font-size: 15px; line-height: 20px;}
+.table td button{ height: 28px;}
+#wrap {
+    min-height: 100%;
+    height: auto;
+    height: 100%;
+    margin: 66px auto -40px;
+    overflow: hidden;
+}
+.navbar .brand{
+   line-height: 30px;
+   color: #000;
+}
+.view_port{
+    border: 1px solid #DDDDDD;
+    border-radius: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: relative;
+    word-wrap: break-word;
+    overflow:hidden;
+    background-color: #FFF;
+}
+.view_port_fixed{
+    position: fixed;
+    top:65px;
+    bottom:59px;
+    left: 20px;
+    right: 270px;
+    z-index: 9;
+}
+#push,
+#footer {
+    height: 45px;
+}
+#footer > .navbar-inner > .container-fluid{ padding-right: 0}
+#footer > .divider-vertical{
+   height: 45px
+}
+#wrap > .container-fluid {
+    padding-top: 0px;
+}
+#footer .container-fluid .bottom {
+    padding: 10px 0;
+    margin-right: 11px;
+}
+#footer .container-fluid .bottom .copy{
+    font-size: 88%;
+}
+
+#footer .container-fluid .bottom a, .container-fluid .bottom a:link, .container-fluid .bottom a:visited, .container-fluid .bottom a:hover{
+    color: #333;
+    text-shadow: 1px 0 0 #FFF;
+    text-decoration: none;
+}
+.container-fluid .proc-container{
+    margin-right: 0;
+}
+#footer .container-fluid .divider-vertical{
+    height: 45px;
+}
+
+.view_port .explain{
+   border: 1px solid #FFF;
+    border-bottom-width: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    left: 0;
+    padding-right: 0;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    z-index: 9;
+    right: 0;
+    background: #FAFAFA;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+.breadcrumb{
+   right:-1px;
+   display: block;
+   border-radius: 0;
+   padding-top: 0;
+   padding-bottom: 0;
+   height: 42px; 
+   line-height: 42px;
+}
+.breadcrumb>li{
+    float:left;
+    padding-top: 7px;
+}
+#upToolp>a{
+   color: #CCC;
+   cursor: default
+}
+.breadcrumb .divider-vertical{
+    padding-top: 0;
+    height: 42px;
+    float:left;
+}
+.breadcrumb li.well{
+    padding: 0 0;
+    margin: 6px 0 6px 0;
+    -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0
+}
+.breadcrumb li.well
+
+.breadcrumb .divider-vertical{
+   height: 35px;
+   margin: 0 9px
+}
+
+.breadcrumb>li>a{
+    display: inline-block;
+    padding: 4px 3px;
+    vertical-align: middle;
+}
+
+.breadcrumb li a>i{
+    margin-right: 4px;
+    font-size: 15px;
+}
+.breadcrumb li.active a>i{
+    color: #CCC;
+}
+.breadcrumb li a span i{
+    margin-right: 0;
+    font-size: inherit;
+}
+
+.breadcrumb li:hover a, #breadcrumb li:active a, #breadcrumb li a:active{
+    text-decoration: none
+}
+.breadcrumb .controller{
+    position:relative;
+    right: 20px;
+    top:0;
+    margin-top: 0;
+}
+.breadcrumb .breadcontr{
+   padding-top: 0;
+}
+.breadcrumb .breadcontr button{
+   margin-right: 10px;
+}
+.breadcrumb .listControl{
+   padding: 0 4px 2px 4px;
+}
+.breadcrumb .breadcontr a{
+   float: left;
+   display: block;
+   overflow: hidden;
+   height: 22px;
+   margin-top: 9px;
+}
+.breadcontr ul{
+   border-bottom: 0;
+}
+.breadcrumb .breadcontr>ul>li>a{
+   margin-top: 0;
+}
+.breadcrumb .listControl a>i.icon, #mSideOpener>i{
+   font-size: 24px;
+   line-height: 25px;
+   padding: 0;
+   color: #555;
+}
+.breadcrumb .listControl a>span.title{
+   width: 0;
+   color: #555;
+   font-size: 12px;
+   float: right;
+   line-height: 22px;
+   overflow: hidden;
+}
+.breadcrumb .listControl a.disabled, .breadcrumb .listControl a.disabled>i.icon, .breadcrumb .listControl a.disabled>span.title{
+   color: #B8B8B8;
+   cursor: default
+}
+#mprogress{
+    width: auto;
+    display: none;
+}
+
+#mprogress strong{
+    font-size: 11px;
+    margin-right: 9px;
+    
+}
+#mprogress .progress{
+    width: 124px;
+    position: relative;
+}
+#mprogress span, .progress span{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    color: #FAFAFA;
+    text-align: center;
+    width: 100%;
+    font-size: 11px;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.6);
+    font-weight: bold;
+    line-height: 21px;
+    left:0;
+    right: 0;
+}
+.progress span.bl{
+    color: #666;
+    text-shadow: 1px 0 0 rgba(255,255,255,0.6);
+}
+.usage{
+    width: 110px;
+    position: relative;
+    margin-bottom: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.container-fluid .size-container{
+    width: 244px;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    float: right
+}
+#meters{
+    font-size: 11px !important;
+    overflow: hidden;
+    word-break: keep-all;
+    cursor: default;
+}
+#meters .nums div{
+    float:left;
+    
+}
+#meters .nums div.last{
+    margin-left: 4px;
+}
+#meters .nums div.clearfix{
+    float: none;
+    margin-left: 0;
+}
+#meters .well{
+    padding: 4px;
+    margin-bottom: -10px;
+}
+#meters .percent{
+    float:left;
+}
+#meters i{ font-size: 14px}
+
+.other{
+   position: relative
+}
+.other:after, .video:after, .audio:after, .document:after, .image:after{
+   font-family: "FontAwesome";
+   content: "\f187";
+   text-align: center;
+   text-shadow: 1px 0 0 rgba(255,255,255,0.6);
+   cursor: default;
+}
+.directoryList li.other:after, .directoryList li.video:after, .directoryList li.audio:after, .directoryList li.document:after, .directoryList li.image:after{
+   font-size: 20px;
+   line-height: 20px;
+   bottom: 3px;
+   position:absolute;  
+   left: 4px;
+   color: #B2B2B2;
+}
+#files li.other:after, #files li.video:after, #files li.audio:after, #files li.document:after, #files li.image:after{
+   font-size: 70px;
+   line-height: 70px;
+   top: 10px;
+   position:absolute;  
+   left: 26px;
+   color: #B2B2B2;
+}
+.image:after{
+   content: "\f03e";
+}
+.video:after{
+   content: "\f008";
+}
+.audio:after{
+   content: "\f001";
+}
+.document:after{
+   content: "\f02d";
+}
+.right_divider{ border-right: 2px solid #DEDEDE}
+.no-round{ -moz-border-radius: 0 !important; -webkit-border-radius: 0 !important; border-radius: 0 !important}
+
+.navbar-fixed-top .navbar-inner{ padding: 0 10px 0 0;}
+.navbar-fixed-top .navbar-inner .nav > li{ padding-top: 5px; padding-bottom: 3px;}
+.navbar-fixed-top .welcomenav{ width: 220px; position: relative; margin-right: -10px !important; top: 0; }
+.navbar-fixed-top .welcomenav > li{ float: right}
+.navbar-fixed-top #signoutb{ margin-left: 14px;}
+
+.navbar .nav-header i{ font-size: 15px}
+.navbar .nav .nav-header{font-size: 98%;}
+
+.navbar-fixed-top .nav-search li{ float: right; width: 100%}
+.navbar-fixed-top .searcform{ position: relative; width: 100%}
+
+.navbar-fixed-top .search-query{
+    display: block;
+    width: auto;
+    max-width: 100%;
+    border-radius: 0;
+}
+.typeahead{
+   border-radius: 0;
+   font-size: 12px;
+}
+.typeahead li{
+}
+
+.typeahead li a div{
+   display: inline-block;
+   vertical-align: middle;
+   zoom:1;
+   *display:inline;
+   line-height: 26px;
+}
+
+.typeahead li div.prv{
+   font-size: 20px;
+   height: 24px;
+   width: 24px;
+   margin-right: 6px;
+}
+.typeahead li div.name{
+   font-size: 11px;
+}
+
+.typeahead.active li div.prv{
+   color: #fff;
+   text-shadow: none;
+}
+
+.typeahead.active li div.prv img{
+   height: 20px;
+   width: 20px;
+   line-height: 26px;
+}
+
+.sidebar{ padding-left:  0}
+.sidebar-nav {
+    bottom: 43px;
+    right: 0;
+    padding: 9px 0 0 0;
+    position: fixed;
+    top: 49px;
+    transition: all 500ms ease 0s;
+    width: 251px;
+    z-index: 10;
+    zoom:1;
+}
+.sidebar-nav .navbar-inner{ border: none; padding-top: 9px; position: relative; bottom: 0; top: 0; zoom:1}
+
+.sidebar-nav .navbar > ul{
+    list-style: none;
+    margin-left: 0;
+    position: fixed;
+    top: 49px;
+    bottom: 43px;
+    margin-bottom: 0;
+    right: 0; 
+    float: right;
+    width: 251px;
+    zoom:1;
+    float: right;
+    z-index: 11;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset, 0 0 0 1px rgba(255, 255, 255, 1) inset;
+    padding-top: 7px;
+}
+.sidebar-nav .navbar > ul > li{
+   margin: 5px 0;
+   border: 1px solid #FFF;
+   padding: 8px 20px 8px 18px;
+   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+   border-left: 0;
+   border-right: 0;
+   background: #FAFAFA;
+   margin: 10px 0 4px 2px;
+   
+}
+#listShowOpt{ position: relative}
+
+.sidebar-nav .nav-header { 
+   font-size:14px;
+   margin: 0; 
+   padding:5px 0 3px 0;
+   color:#0B0B0B; 
+   margin-top: 0;
+   text-shadow:1px 0 0 #FAFAFA;
+   overflow: hidden
+}
+.sidebar-nav .nav-header i.tip { float: right; cursor: help }
+
+.sidebar-nav .navbar > ul > li.info{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: 0;
+      padding-right: 13px;
+      width: auto;
+}
+.sidebar-nav .alert {
+   position:relative;
+   font-size: 12px;
+   padding-right: 8px;
+   margin-bottom: 0;
+}
+.sidebar-nav .alert ul{
+   margin-left: 14px;
+   margin-top: 10px;
+}
+.sidebar-nav .alert-info strong{
+   
+}
+.popover-info {position:relative;}
+.popover-info .popover {display:none; top: -12.5px; left:15px; }
+.popover-info:hover .popover {display:block; opacity:1; width:400px;}
+.popover-info:hover .popover .arrow {top:23px;}
+
+.sidebar-nav .listShowOpt {
+    text-align: right;
+    margin-top: 0
+}
+
+.sidebar-nav .btn-group > .dropdown-menu{
+    font-size: 11px;
+}
+.sidebar-nav .btn-group a.more{
+   margin-left: 2px;
+   margin-right: 1px;
+   padding-left:4px;
+   padding-right: 4px;
+}
+.sidebar-nav .btn-group a.more i{
+   line-height: 24px;
+   font-weight: normal !important;
+   font-size: 18px;
+   text-shadow: 1px 0 0 #FFF
+}
+.sidebar-nav .dropdown-menu.f_allactions  {
+   padding: 0;
+   border-radius: 0;
+}
+.sidebar-nav .dropdown-menu.f_allactions li{
+  
+}
+.sidebar-nav .dropdown-menu.f_allactions li a.btn{
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border: none;
+   border-radius: 0;
+   text-align: left;
+}
+.sidebar-nav .dropdown-menu.f_allactions li a:hover{
+   background: #DEDEDE;
+   color: #0088CC; 
+}
+.sidebar-nav .dropdown-menu.f_allactions li a i{
+   font-size: 18px;
+   color: #0088CC;
+}
+
+.sidebar-nav ul li select{ font-size: 12px;}
+.sidebar-nav ul li select optgroup, .sidebar-nav ul li select optgroup option{ padding-left: 3px}
+
+.sidebar-nav .box { 
+   line-height:25px;
+   width:170px;
+   height:25px;
+}
+.sidebar-nav .preview { 
+   display: block;
+   color:#666;
+   font-size:12px;
+   line-height:22px;
+}
+.sidebar-nav .preview input { 
+   width:90px; 
+   padding:0 10px; 
+   background:#bbb; 
+   font-size:10px; 
+   color:#999; 
+   line-height:20px; 
+   height:20px;
+   position:relative; 
+   top:-1px; 
+}
+.sidebar-nav .view { 
+   display: none;
+}
+.sidebar-nav .boxes {
+   display:none;
+}
+ #shareOp{
+    font-size: 22px;
+    line-height: 26px;
+}
+.shareTo a.btn > i{
+    font-size: 18px;
+    font-weight: bold;
+}
+#shere_box{
+    padding-top: 56px;
+    height: 160px;
+    margin: 0;
+}
+#shareme{
+    position: relative;
+    width: 210px;
+    margin: auto;
+
+}
+
+#shareme a.social, #shareme div.origin{
+    display: none;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    top:0;
+    left: 0;
+}
+
+#shareme div.origin{
+    width: 100px; 
+    height: 100px;
+    left:50%;
+    top:0;
+    margin-left: -50px;
+    display: block;
+    z-index: 2;
+}
+#shareme>a>i{
+    font-size: 30px;
+    line-height: 50px;
+    width: 40px;
+}
+#shareme>div.origin>i{
+    font-size:60px; 
+    line-height: 100px;
+    width: 80px
+}
+
+.sidebar-nav button.shareOp i{
+    font-size: 22px;
+    line-height: 26px;
+}
+
+#uploadFolderSelection .icon-folder-close-alt{
+   font-size:33px;
+   margin-right: 6px;
+   vertical-align: baseline   
+}
+#uploadFolderSelection .icon-mail-forward{
+   position:absolute;
+   left:0px;
+   top:16px;
+   font-size: 18px;
+}
+
+.navbar .nav > li > a{ 
+   outline: 0;
+   color: #555;
+   font-weight: bold
+}
+.navbar .nav > li > a i{
+   font-size: 18px;
+   color: #555;
+}
+.navbar .nav>li>a i.icon-caret-down{
+   font-size: 14px; 
+   margin-left: 5px
+}
+.navbar .nav > li.active a i, .navbar .nav > li.open a i{
+   color: #0074A2;
+}
+
+.navbar .dropdown-menu .divider, .sidebar-nav .dropdown-menu .divider{ 
+   margin: 1px;
+}
+
+.navbar .dropdown-menu>li>a, sidebar-nav .dropdown-menu>li>a{ 
+   padding-top: 2px; 
+   padding-bottom: 2px
+}
+.sidebar-nav .dropdown-menu>li>a>i{ 
+   font-size: 14px
+}
+
+#goUp{
+   position: fixed;
+   z-index:7;
+   bottom:50px;
+   right:0;
+   display:none;
+   padding:4px 8px 3px 10px;
+   border-radius: 0;
+   -webkit-border-top-left-radius: 4px;
+   -moz-border-radius-topleft: 4px;
+   border-top-left-radius: 4px;  
+   
+}
+#goUp i{
+   font-size: 28px;
+}
+.btn:active, .btn-group{ outline: 0 !important}
+/*Upload And F&F screen*/
+#upload, #list, #users, .settings{
+   padding:5px 0 10px 6px;
+   overflow-x: hidden;
+   overflow-y: auto;
+   position: static;
+   margin-top: 4px;
+}
+
+/*Upload*/
+#upload form{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#upload_select_cont{
+
+}
+#upsrtoolbox{
+   position: relative;
+   float: right;
+   top:-2px;
+   right: -3px;
+   border-radius: 0;
+   background-color: #FAFAFA;
+   margin-top: -7px;
+}
+#upsrtoolbox > button.btn{
+   line-height: 39px;
+   padding-top: 6px;
+   padding-bottom: 0;
+   border-radius: 0;
+}
+#upsrtoolbox .btn i{
+   font-size: 22px
+}
+#upload_select_cont{
+   left: 0;
+   right: 0;
+   top: 46px;
+   bottom: 0;
+   position: absolute;
+}
+#upload_select_cont .type-selection{
+   color:#CCC;
+   position:absolute;
+   left:50%;
+   margin-left: -160px;
+   top: 50%;
+   padding: 10px 0;
+   margin-top: -150px;
+   text-align: center;
+   width:320px;
+   height:240px;
+   z-index: 0;
+   cursor: default;
+}
+#upload_select_cont.on{
+   background:  #FFF;
+   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+   z-index: 8;
+   box-shadow: 0 0 25px rgba(0, 0, 0, 0.25) inset, 0 0 0 1px rgba(0, 0, 0, 0.015) inset;
+}
+#files{
+   list-style: none;
+   margin: 0;
+}
+#files li{
+    width: 120px;
+    height: 120px;
+}
+#files li.success {
+   box-shadow: 0 1px 2px #468847;
+}
+#files li.error {
+   box-shadow: 0 1px 2px #DD3C10;
+}
+#files li.abort {
+   box-shadow: 0 1px 2px #F9A021;
+}
+#files .preview{
+    margin: 0;
+    float:left;
+    z-index: 1;
+    width: 118px;
+    height: 118px;
+}
+
+li div.fname, li.file div.fname, div.fprop{
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    padding: 5px 3px 5px 3px;
+    height: 20px;
+    font-size: 11px;
+    zoom: 1;
+    background-color: #555;
+    background-color: rgba(51,51,51,0.5);
+    color: #FFF;
+    cursor: pointer;
+    border-bottom: 1px solid #CCC;
+    border-top: 1px solid #999;
+    text-align: center;
+}
+
+li div.fname strong{
+    font-size: 12px;
+}
+
+li.file.selected div.fname{
+    border-bottom-color: #1E8CBE;
+    border-top-color: #1E8CBE;
+    box-shadow: 0 0 0 1px rgba(255,255,255, 0.4);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+li.file div.fname.mb{
+    border-bottom-color: #CCC;
+    border-top-color: #CCC;
+    box-shadow: 0 0 0 1px rgba(255,255,255, 0.4);
+}
+
+#files li.success div.fname{
+    border: 1px solid #468847;
+    box-shadow: 0 0 0 1px rgba(255,255,255, 0.4);
+    background-color: #DFF0D8;
+    color: #468847;
+    height: auto;
+}
+#files li.abort div.fname{
+    border: 1px solid #F9A021;
+    box-shadow: 0 0 0 1px rgba(255,255,255, 0.4);
+    background-color: #FCF8E3;
+    color: #F9A021;
+    height: auto;
+}
+
+#files li.error div.fname{
+    border: 1px solid #DD3C10;
+    box-shadow: 0 0 0 1px rgba(255,255,255, 0.4);
+    background-color: #FFEBE8;
+    color: #B94A48;
+    height: auto;
+}
+
+#files li.error div.fname strong{
+   font-weight: bold;
+}
+
+#files button.remove, #files button.ok, #files button.error, #files button.abort{
+    z-index: 4;
+    font-size: 19px;
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
+    padding:0;
+    outline: 0 none;
+    position: absolute;
+    right: -7px;
+    top: -8px;
+}
+#files button.ok, #files button.error, #files button.abort{
+    cursor: default;
+    width: 28px;
+    height: 28px;
+    line-height: 24px;
+    font-size: 23px;
+}
+#files .details{
+    position: absolute;
+    right: 4px;
+    bottom: 1px;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+    text-align: center;
+    background-color: transparent;
+}
+#files .details i{
+    font-size: 18px;
+    position: relative;
+    color: #444;
+    text-shadow: 1px 0 0 #FFF;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2
+}
+#files .details:hover , #files .details:active, #files .details:link{
+    text-decoration: none;
+}
+#files li.error .popover{
+   box-shadow: 0 1px 2px #DD3C10;
+}
+#files li.abort .popover{
+   box-shadow: 0 1px 2px #F9A021;
+}
+#files li .popover-title{
+    font-size: 12px;
+    font-weight: bold;
+    padding:5px 4px 6px
+}
+#files li .popover-content{
+    font-size: 11px;
+    padding:7px
+}
+#files li .popover-content div{
+    display: block;
+    width: 140px;
+}
+#files li .popover-content strong{
+    width: 70px;
+}
+#files li .popover-content span{
+    font-style: italic;
+}
+#files .proc{
+   position: absolute;
+   z-index: 4;
+   background-color: rgba(255,255,255,0.8);
+   width: 100%;
+   height: 100%;
+   top:0;
+   right: 0;
+   display: block;
+   transition: all 0.7s ease 0s;
+}
+#files li .perc{
+   font-weight: 100;
+   position: absolute;
+   bottom: 32px;
+   background: rgba(255,255,255,0.2);
+   width: 100%;
+   z-index: 5;
+   line-height: 44px;
+   font-size: 44px;
+   display: none;
+   height: 44px;
+   text-align: center;
+   color: #999;
+   text-shadow: 1px 0 0 rgba(0,0,0, 0.3);
+   transition: all 0.2s ease 0s;
+}
+#files li.success .perc{
+   color: #55AC55;
+}
+#files li.abort .perc{
+   color: #F9A021;
+}
+#files li.error .perc{
+   color: #DD3C10;
+}
+#files .perc span{
+   font-size: 78%;
+}
+#files li .oksign, #files li .warningsign, #files li .cancelsing{
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+    cursor: pointer;
+}
+#files li .warningsign, #files li .cancelsing{
+   position: absolute;
+   top: 44px;
+   left: 40px;
+   font-size: 44px;
+}
+/*List screen*/
+#list{
+   padding:5px 0 10px 0px;
+   overflow: hidden;
+   overflow-x: hidden;
+   overflow-y: auto;
+   position: relative;
+}
+
+.directoryList{
+   list-style: none;
+   margin: 0;
+   padding: 0 10px;
+   float: left;
+}
+.directoryList.thumb > li, #files li{
+    margin: 14px 6px 2px 8px;
+    padding: 0;
+    position: relative;
+    float: left;
+    background: #FAFAFA;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.directoryList.thumb > li.selected {
+    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 3px #1E8CBE;
+}
+
+div.file{
+    background: #FAFAFA;
+    cursor: pointer;
+    position: relative;
+    height: 119px;
+    width: 118px;
+    border: 1px solid #AAA;
+    border-bottom: none;
+}
+div.file.thumbnail{
+    height: 118px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 0;
+}
+div.file:after {
+    bottom: 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.0) inset;
+    content: "";
+    display: block;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.directoryList.thumb  > li.folder {
+   height: 120px;
+   width: 120px
+}
+.directoryList.thumb > li.folder:hover{
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.065) inset, 0 0 0 1px rgba(0, 0, 0, 0.15) inset;
+}
+
+.directoryList.thumb  > li.folder > a, .directoryList.thumb  > li div.file > a.item{
+    display: block;
+    outline: 0;
+    text-align: center;
+    color: #0B0B0B;
+    height: 118px;
+    width: 118px;
+}
+.directoryList.thumb  > li.folder > a{
+   height: 90px;
+   width: 120px;
+}
+.bodloa{
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) inset, 0 0 0 1px rgba(0, 0, 0, 0.25) inset;
+   background-color: #FFF;
+   padding: 15px;
+ 
+   width: 120px !important;
+   height: 120px  !important;
+   border-radius: 4px;
+}
+.directoryList.thumb  > li div.file > a.item{
+    position: relative;
+}
+
+div.file > a.vbtn, div.file > a.octet{
+   -webkit-transition: all 0.2s ease;
+   -moz-transition: all 0.2s ease;
+   -o-transition: all 0.2s ease;
+   -ms-transition: all 0.2s ease;
+   border-radius: 4px;
+   color: #999;
+   font-size: 28px;
+   height: 44px;
+   width: 44px;
+   text-align: center;
+   left: 50%;
+   line-height: 45px;
+   margin: -22px 0 0 -22px;
+   padding: 0;
+   position: absolute;
+   top: 48px;
+   z-index: 3;
+   border: 1px solid #FFFFFF; 
+   border-radius: 4px;
+   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
+    
+}
+
+div.file > a.vbtn:hover, div.file >a.octet:hover{
+    background: #F3F3F3 url(../img/gridbg.gif) repeat;
+    font-size: 38px;
+    line-height: 47px;
+    text-shadow: 1px  0 0 #DADADA;
+    color: #888;
+}
+
+div.file > a.vbtn:active, div.file > a.octet:active{
+   background-color: #FAFAFA;
+}
+.directoryList.thumb > li div.file > a > img{
+    width: 100%;
+    height: 100%;
+}
+
+.directoryList.thumb > li div.file > a > img.ext{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 1px;
+    bottom: 2px;
+    display: none;
+}
+
+.directoryList.thumb > li div.file > a > div.inf{
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 37px;
+    left:4px;
+    right: 4px;
+    font-size: 11px;
+}
+.directoryList.thumb > li a span.foq{
+    position: absolute;
+    top:54px;
+    left: 4px;
+    width: 64px;
+    font-size: 12px;
+    line-height: 12px;
+}
+.directoryList.thumb > li a span.foq small{
+   display:block;
+}
+.directoryList.thumb > li a span.foq small.e{
+   line-height: 15px;
+   margin-top: 4px;
+}
+.directoryList.thumb > li a span.foq small.e i{
+   text-decoration: none;
+   margin-right: 2px;
+   font-size: 12px;
+}
+.directoryList.thumb > li a span.foq small i{
+   font-size: 110%;
+}
+.directoryList.thumb > li a span.fon{
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    margin: 1px;
+    margin-bottom: 10px;
+    background-color: #EEE;
+    text-shadow: 1px 0 0 #FFF;
+    border-bottom: 1px solid #DEDEDE;
+}
+.directoryList.thumb > li a span.fot{
+    position: absolute;
+    top: 37px;
+    right: 13px;
+    text-align: right;
+    display: none;
+    font-size: 16px;
+}
+.directoryList.thumb > li.folder a.rpsve:hover span.fot{
+    display: block;
+}
+.directoryList.thumb  > li a span.foi{
+    width: 100%;
+    height: 79px;
+    display:block;
+    color: #3398DB;
+    text-shadow: 1px 1px 1px #000;
+    background:  transparent url(../img/dir.png) center center no-repeat;
+}
+.directoryList.thumb > li.folder > a.ose{
+   color: inherit !important;
+}
+
+div.foacts{display: none;}
+
+.directoryList.thumb  > li > div.foacts{
+    position: absolute;
+    bottom: 3px;
+    text-align: left;
+    right: 2px;
+    left:2px;
+    z-index: 2;
+}
+.directoryList.thumb  > li > div.foacts a.btn{
+    font-size: 14px;
+    padding: 3px 5px 2px 5px;
+    vertical-align: inherit
+}
+
+.directoryList.thumb  > li.mb .check.off, .directoryList.thumb  > li .check.on, .directoryList.thumb > li.folder > .ose{
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
+    display: none;
+    padding:0;
+    height: 24px;
+    outline: 0 none;
+    position: absolute;
+    right: -7px;
+    top: -8px;
+    width: 24px;
+    color: #FFF;
+    font-size: 19px;
+    line-height: 25px;
+    z-index: 5;
+}
+.directoryList.thumb  > li.mb .check.off, .directoryList.thumb  > li.selected .check, .directoryList.thumb > li.folder > .ose{
+   display: block;
+}
+.directoryList.thumb  > li.mb .check.off, .directoryList.thumb > li.folder > .ose{
+   background: #E6E6E6;
+}
+.directoryList.thumb  > li .check:hover, .directoryList.thumb  > li .check.btn-warning:active, .directoryList.thumb  > li .check.btn-warning:focus{
+    background-position: 0 0;
+}
+
+.check.btn.off {
+    display: block;
+    opacity: 1.0 !important
+}
+
+#users{
+    padding: 0 10px 20px 10px;
+}
+
+.settings{
+    padding: 0 0 20px 0;
+}
+.pagination{
+    margin: 0;
+}
+.file-input-wrapper { 
+  display: inline-block; 
+  overflow: hidden; 
+  position: relative; 
+  cursor: pointer; 
+  z-index: 1; 
+  font-size: 12px
+}
+.file-input-wrapper.btn-large{
+  font-size: 18px;
+  font-weight: bold;
+}
+.file-input-wrapper input[type=file], 
+.file-input-wrapper input[type=file]:focus, 
+.file-input-wrapper input[type=file]:hover {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  cursor: pointer; 
+  opacity: 0; 
+  filter: alpha(opacity=0); 
+  z-index: 99; 
+  outline: 0; }
+.file-input-name { 
+  display: none
+}
+
+/* Select styling */
+#fo_dropdownlist{
+    width: 300px;
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+    
+    .navbar-fixed-top .nav-search {
+        width: 355px;
+    }
+    .navbar-fixed-top .nav-search input{ width: 88%;} 
+
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+    .navbar-fixed-top .navbar-inner{padding-right: 10px}
+    .navbar-fixed-top .welcomenav{ width: auto}
+    .navbar-fixed-top .nav-search {
+        width: 275px;
+    }
+    .navbar-fixed-top .nav-search input{ width: 85%}
+    
+}
+@media (min-width: 980px) and (max-width: 1099px) {
+    .navbar-fixed-top .nav-search {
+        width: 195px;
+    }
+    .navbar-fixed-top .nav-search input{ width: 80%}
+    
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 980px) {
+    .navbar-fixed-top{
+       margin-bottom: 0;
+       position: fixed;
+    }
+    .navbar-fixed-top .navbar-inner{padding-right: 5px}
+    .navbar-fixed-top .welcomenav{ width: auto; position: relative; right: 0; top: 0; margin-right: 0 !important; }
+    .navbar-fixed-top .nav-search {
+        width: 100%;
+    }    
+    .navbar-fixed-top .nav-search input{ width: 94%}
+    .view_port_fixed{
+        top: 110px;
+        position:fixed;
+    }
+    
+   .navbar .brand{
+      padding: 2px 20px 0 10px
+   }    
+
+    .sidebar-nav{
+        padding-bottom: 0;
+        margin-bottom: 0
+    }
+
+    .navbar-fixed-bottom{
+       position: fixed;
+
+    }
+    #upToolp{
+       display: none;
+    }
+    
+   .directoryList.thumb > li{
+      margin: 12px 16px;
+      
+   }    
+    
+    
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {
+   
+   .navbar-fixed-top{
+      margin-bottom: 0;
+      position: fixed;
+   }    
+
+    .navbar-fixed-top .navbar-inner{padding-right: 5px}
+    .navbar-fixed-top .welcomenav{ width: auto; position: relative; right: 0; top: 5px; margin-right: 0 !important; }
+    .navbar-fixed-top .navbar-inner{padding-right: 30px; padding-left: 30px;}
+    .navbar-fixed-top .welcomenav{ width: auto; position: relative; right: 0; top: 0; margin-right: 0 !important; }
+    .navbar-fixed-top .nav-search {
+        width: 100%;
+    }    
+
+    .navbar-fixed-top .nav-search input{ width: 98%}
+    #upload_select_cont .type-selection{
+       margin-top: -80px;
+       height:160px
+    }
+    .directoryList{
+       padding: 0;
+    }
+    
+    #upToolp{
+       display: none;
+    }
+}
+
+@media (max-width: 480px) {
+   html{
+      position: static;
+      margin: 0;
+      overflow: hidden;
+   }
+   body{
+      margin-right: 0px;
+      padding: 0px 0 0 0;
+      position: static;
+      overflow: hidden;
+      background: #FAFAFA;
+   }
+   input[type='text'],input[type='number'],textarea {font-size:16px !important;}
+   
+   .navbar .brand{
+      padding: 2px 20px 0 10px
+   }
+   .navbar-fixed-top{
+      margin-bottom: 0;
+      position: fixed;
+   }
+   .navbar-fixed-top .navbar-inner{padding-right: 30px; padding-left: 30px; }
+   .navbar-fixed-top .welcomenav{ width: auto; position: relative; right: 0; top: 0; margin-right: 0 !important; }
+   .navbar-fixed-top .navbar-inner .nav > li{ padding-top: 1px; padding-bottom: 0;}
+   .navbar-fixed-top .nav-search {
+      width: 100%;
+   }
+   .navbar-fixed-top .nav-search input{ width: 98%}
+   #wrap{
+      margin-top: 51px;
+   }
+   .sidebar-nav{
+      top: 43px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;      
+   }
+   .sidebar-nav .navbar > ul{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left:0;
+      right: 0;
+      padding-top: 9px;
+   }
+   .sidebar-nav .navbar > ul > li:first-child{
+      padding-top: 0;
+      padding-bottom: 0;
+   }
+   .sidebar-nav .navbar > ul > li.info{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: 0;
+      padding-right: 13px;
+      width: auto
+   }
+   a.mob i{
+      font-size: 18px;
+   }
+   .breadcrumb .listControl{
+      padding-right: 0;
+      padding-left: 0;
+   }
+   .breadcrumb .breadcontr > a:last-child{
+      margin-top: 5px !important;
+      box-shadow: none !important;
+   }
+   .view_port{
+        top: 0;
+        left: 0;
+        bottom:0;
+        right: 0;
+        height: 100%;
+        position:relative;
+        margin-right: 0;
+        border: 0;
+        border-radius: 0;
+   }   
+   .view_port .explain{
+      padding-right: 4px;
+      padding-left: 4px;
+      position: fixed;
+      z-index: 6;
+      top: 49px;
+      left: 0;
+      right: 0;
+      box-shadow: none
+   }   
+   .view_port .explain.opened{
+       right: 260px;
+       left: -260px;
+   }
+   .breadcrumb > li > a{
+      font-size:9px;
+      padding: 4px 1px;
+   }
+   .breadcrumb > .divider-vertical{
+      margin-left: 0;
+      margin-right: 3px;
+   }
+   #mSideOpener.highlight i{
+      color: blue !important;
+   }
+   #upload_select_cont .type-selection{
+      margin-top: -80px;
+      height:160px
+   }
+   #upsrtoolbox button > span{
+      font-size: 10px;
+      font-weight: bold;
+   }
+   .container-fluid .proc-container{
+      margin-right: 0;
+      display: none
+   }
+   #list, #upload{
+      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      position: static;
+      min-height: 230px;
+   }
+
+   /*file listing*/
+   .directoryList{
+      float:none;
+      padding: 0;
+   }
+   .directoryList.thumb > li{
+      float: left;
+      display: block;
+      width: 80px;
+      margin: 12px;
+      text-align: left;
+      
+   }
+   .directoryList.thumb > li.folder{
+      height: 78px;
+      width: 78px
+   }
+   .directoryList.thumb > li.folder > a{
+      width: 100%;
+      display: block;
+      height: 78px;
+   }
+   .directoryList.thumb  > li.mb .check{
+      top:-10px !important;
+      right: -10px !important;
+      font-size: 16px !important;
+      line-height: 22px !important;
+      height: 21px !important;
+      width: 21px !important;
+   }
+
+   .directoryList.thumb > li a span.foq{
+      top: 44px;
+      font-size: 10px !important;
+   }
+   .directoryList.thumb > li a span.foi{
+      height: 50px;
+      background:  transparent url(../img/dir-sm.png) center center no-repeat;
+   } 
+   .directoryList.thumb > li a span.fon{
+      margin-bottom: 2px;
+      font-size: 9px;
+   }
+   .directoryList.thumb  > li > div.foacts{
+      right: 42px;
+   }
+   .directoryList.thumb > li > div.foacts a.btn{
+      font-size: 20px !important;
+   }
+   .directoryList.thumb > li div.file > a.item{
+      width: 100%;
+      height: 80px;
+      text-align: left
+   }
+   .directoryList div.file{
+      background: #FFF;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) inset, 0 0 0 1px rgba(0, 0, 0, 0.05) inset;
+      cursor: pointer;
+      position: relative;
+      height: 80px;
+      width: 100%;
+      border: 1px solid #DDDDDD;
+   }
+   div.file > a.vbtn, div.file > a.octet{
+      border-radius: 100% 100% 100% 100%;
+      color: #999;
+      font-size: 24px;
+      height: 34px;
+      width: 34px;
+      text-align: center;
+      left: 23px;
+      line-height: 36px;
+      margin: 0 0 0 0;
+      padding: 0;
+      position: absolute;
+      top: 32px;
+      z-index: 3;
+   }
+   div.file > a.vbtn:hover, div.file > a.octet:hover{
+      background: #F3F3F3;
+      font-size: 30px;
+      line-height: 37px;
+      text-shadow: 1px  0 0 #DADADA;
+      color: #888;
+   }
+
+   div.file > a.vbtn:active, div.file > a.octet:active{
+      background-color: #FAFAFA;
+   }   
+   .directoryList.thumb > li div.file > a > img{
+      margin: 0;
+      width: 78px;
+      height: 78px;
+      border-right: none;
+   }
+   div.fname{
+      top: 0;
+      text-align: left;
+/*      left: 65px;*/
+      background-color: transparent;
+      border-bottom: 1px solid #CCC;
+      color: #2F95B3
+   }
+
+   #upload{
+      padding: 5px 0 10px 0px;
+   }
+   #files li{
+      width: 80px;
+      max-height: 80px;
+      margin: 12px;
+   }
+   div.file.thumbnail, #files .preview{
+      height: 78px;
+      width: 78px;
+   }
+   #upload_select_cont .type-selection{
+      color:#CCC;
+      position:absolute;
+      left:50%;
+      margin-left: -120px;
+      top: 50%;
+      margin-top: -70px;
+      text-align: center;
+      width:240px;
+      height:240px
+   }
+
+   #upsrtoolbox{
+      display: none ;
+      position: absolute;
+      z-index:4;
+      top:-1px;
+      right: -1px;
+      left: -1px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0px;   
+      background-color: #FAFAFA;
+   }
+
+   #upsrtoolbox > button.btn{
+      line-height: 38px;
+      padding:2px 0;
+      padding-top: 6px;
+      padding-bottom: 0;
+      
+   }
+   #upsrtoolbox .btn i{
+      font-size: 16px
+   }
+   .container-fluid .size-container{
+      overflow: visible;
+      height: auto;
+      width: 100%;
+      padding: 0;
+      margin-left: 5px;
+      float: left;
+      margin-top: 5px;
+   }
+   #meters .well{
+      margin-bottom: 0;
+   }
+   #meters .percent{
+      margin-top: 10px;
+   }
+   .usage{
+      width: 160px;
+      max-width: 161px;
+      
+   }
+   #meters .divider-vertical{
+      height: 55px;
+   }
+   #menu-right{
+      padding-top: 104px;
+   }
+}
+
+@media only screen and (max-width: 800px) { 
+
+    /* Force table to not be like tables anymore */
+    table, 
+    thead, 
+    tbody, 
+    th, 
+    td, 
+    tr { 
+        display: block; 
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid #ccc; }
+
+    td { 
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+        white-space: normal;
+        text-align:left;
+    }
+
+    td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+    }
+
+    /*
+    Label the data
+    */
+    td:before { content: attr(data-title); }
+}

@@ -1,0 +1,9 @@
+# force to a download dialog for unknown files:
+AddType application/octet-stream csv php php3 css js asp aspx txt xml
+ForceType application/octet-stream
+<FilesMatch "(?i)\.(gif|jpg|jpeg|png|m2v|mp3|mp2|mp4|mov|oga|ogg|ogv|webm)$">
+  ForceType none
+</FilesMatch>
+# Prevent IE from MIME-sniffing:
+Header set X-Content-Type-Options "nosniff"
+

@@ -1,0 +1,15 @@
+{
+    "name": "Nedo/cache",
+    "authors": [
+        {
+            "name": "Nedo",
+            "email": "nedox@xneda.com"
+        }
+    ],
+    "target-dir": "Nedo/Cache",
+    "autoload": {
+        "psr-0": {
+            "Nedo\\Cache": ""
+        }
+    }
+}

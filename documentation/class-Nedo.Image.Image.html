@@ -1,0 +1,1946 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Nedo\Image\Image | Closhare</title>
+
+	<script type="text/javascript" src="resources/combined.js?3104663864"></script>
+	<script type="text/javascript" src="elementlist.js?1738243274"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Nedo.html">Nedo<span></span></a>
+						<ul>
+				<li><a href="namespace-Nedo.Cache.html">Cache</a>
+						</li>
+				<li class="active"><a href="namespace-Nedo.Image.html">Image<span></span></a>
+						<ul>
+				<li><a href="namespace-Nedo.Image.Adapter.html">Adapter</a>
+						</li>
+				<li><a href="namespace-Nedo.Image.Source.html">Source</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Nedo.Image.GarbageCollect.html">GarbageCollect</a></li>
+				<li class="active"><a href="class-Nedo.Image.Image.html">Image</a></li>
+				<li><a href="class-Nedo.Image.ImageColor.html">ImageColor</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Nedo.Image.html" title="Summary of Nedo\Image"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Image</h1>
+
+
+	<div class="description">
+	
+<p>Images handling class</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Nedo.Core.html"><span>Nedo\Core</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Nedo\Image\Image</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Nedo.html">Nedo</a>\<a href="namespace-Nedo.Image.html">Image</a><br />
+		
+
+		<b>Located at</b> application/lib/image/Image.php<br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setCacheDir" id="_setCacheDir">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCacheDir">#</a>
+		<code>setCacheDir( <span>mixed <var>$cacheDir</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Change the caching directory</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Change the caching directory</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setActualCacheDir" id="_setActualCacheDir">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setActualCacheDir">#</a>
+		<code>setActualCacheDir( <span>mixed <var>$actualCacheDir</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The actual cache dir</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The actual cache dir</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPrettyName" id="_setPrettyName">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPrettyName">#</a>
+		<code>setPrettyName( <span>mixed <var>$name</var></span>, <span>mixed <var>$prefix</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the pretty name of the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the pretty name of the image</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code>__construct( <span>mixed <var>$originalFile</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$width</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$height</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>__construct()</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>__construct()</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Nedo.Core.html#___construct">Nedo\Core::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setData" id="_setData">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setData">#</a>
+		<code>setData( <span>mixed <var>$data</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the image data</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the image data</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setResource" id="_setResource">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setResource">#</a>
+		<code>setResource( <span>mixed <var>$resource</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the resource</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the resource</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="useFallback" id="_useFallback">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_useFallback">#</a>
+		<code>useFallback( <span>mixed <var>$useFallbackImage</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Use the fallback image or not</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Use the fallback image or not</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFallback" id="_setFallback">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFallback">#</a>
+		<code>setFallback( <span>mixed <var>$fallback</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the fallback image to use</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the fallback image to use</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFallback" id="_getFallback">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFallback">#</a>
+		<code>getFallback( )</code>
+
+		<div class="description short">
+			
+<p>Gets the fallack image path</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the fallack image path</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCacheFallback" id="_getCacheFallback">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCacheFallback">#</a>
+		<code>getCacheFallback( )</code>
+
+		<div class="description short">
+			
+<p>Gets the fallback into the cache dir</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the fallback into the cache dir</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAdapter" id="_getAdapter">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nedo.Image.Adapter.AdapterInterface.html">Nedo\Image\Adapter\AdapterInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAdapter">#</a>
+		<code>getAdapter( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nedo.Image.Adapter.AdapterInterface.html">Nedo\Image\Adapter\AdapterInterface</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAdapter" id="_setAdapter">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAdapter">#</a>
+		<code>setAdapter( <span>mixed <var>$adapter</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFilePath" id="_getFilePath">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFilePath">#</a>
+		<code>getFilePath( )</code>
+
+		<div class="description short">
+			
+<p>Get the file path</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the file path</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>a string with the filen name, null if the image does not depends on a file<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fromFile" id="_fromFile">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fromFile">#</a>
+		<code>fromFile( <span>string <var>$originalFile</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Defines the file only after instantiation</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Defines the file only after instantiation</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$originalFile</var></dt>
+					<dd><code>string</code><br>$originalFile the file path</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="correct" id="_correct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_correct">#</a>
+		<code>correct( )</code>
+
+		<div class="description short">
+			
+<p>Tells if the image is correct</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Tells if the image is correct</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="guessType" id="_guessType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_guessType">#</a>
+		<code>guessType( )</code>
+
+		<div class="description short">
+			
+<p>Guess the file type</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Guess the file type</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addOperation" id="_addOperation">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addOperation">#</a>
+		<code>addOperation( <span>mixed <var>$method</var></span>, <span>mixed <var>$args</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds an operation</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds an operation</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__call" id="___call">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___call">#</a>
+		<code>__call( <span>mixed <var>$methodName</var></span>, <span>mixed <var>$args</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Generic function</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generic function</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="serializeOperations" id="_serializeOperations">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_serializeOperations">#</a>
+		<code>serializeOperations( )</code>
+
+		<div class="description short">
+			
+<p>Serialization of operations</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Serialization of operations</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="generateHash" id="_generateHash">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_generateHash">#</a>
+		<code>generateHash( <span>mixed <var>$type</var> = <span class="php-quote">'guess'</span></span>, <span>mixed <var>$quality</var> = <span class="php-num">85</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Generates the hash</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generates the hash</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHash" id="_getHash">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHash">#</a>
+		<code>getHash( <span>mixed <var>$type</var> = <span class="php-quote">'guess'</span></span>, <span>mixed <var>$quality</var> = <span class="php-num">85</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Gets the hash</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the hash</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="cacheFile" id="_cacheFile">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_cacheFile">#</a>
+		<code>cacheFile( <span>string <var>$type</var> = <span class="php-quote">'jpg'</span></span>, <span>integer <var>$quality</var> = <span class="php-num">85</span></span>, <span>mixed <var>$actual</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Gets the cache file name and generate it if it does not exists. Note that if
+it exists, all the image computation process will not be done.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the cache file name and generate it if it does not exists. Note that if
+it exists, all the image computation process will not be done.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code><br>$type the image type</dd>
+					<dt><var>$quality</var></dt>
+					<dd><code>integer</code><br>$quality the quality (for JPEG)</dd>
+					<dt><var>$actual</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="cacheData" id="_cacheData">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_cacheData">#</a>
+		<code>cacheData( <span>string <var>$type</var> = <span class="php-quote">'jpg'</span></span>, <span>integer <var>$quality</var> = <span class="php-num">85</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Get cache data (to render the image)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get cache data (to render the image)</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code><br>$type the image type</dd>
+					<dt><var>$quality</var></dt>
+					<dd><code>integer</code><br>$quality the quality (for JPEG)</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFilename" id="_getFilename">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFilename">#</a>
+		<code>getFilename( <span>mixed <var>$filename</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Hook to helps to extends and enhance this class</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Hook to helps to extends and enhance this class</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="jpeg" id="_jpeg">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_jpeg">#</a>
+		<code>jpeg( <span>mixed <var>$quality</var> = <span class="php-num">85</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Generates and output a jpeg cached file</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generates and output a jpeg cached file</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="gif" id="_gif">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_gif">#</a>
+		<code>gif( )</code>
+
+		<div class="description short">
+			
+<p>Generates and output a gif cached file</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generates and output a gif cached file</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="png" id="_png">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_png">#</a>
+		<code>png( )</code>
+
+		<div class="description short">
+			
+<p>Generates and output a png cached file</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generates and output a png cached file</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="guess" id="_guess">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_guess">#</a>
+		<code>guess( <span>mixed <var>$quality</var> = <span class="php-num">85</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Generates and output an image using the same type as input</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generates and output an image using the same type as input</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDependencies" id="_getDependencies">
+
+		<td class="attributes"><code>
+			 public 
+			string[]
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDependencies">#</a>
+		<code>getDependencies( )</code>
+
+		<div class="description short">
+			
+<p>Get all the files that this image depends on</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get all the files that this image depends on</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string[]</code><br>this is an array of strings containing all the files that the current Image
+depends on<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="applyOperations" id="_applyOperations">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_applyOperations">#</a>
+		<code>applyOperations( )</code>
+
+		<div class="description short">
+			
+<p>Applies the operations</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Applies the operations</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="init" id="_init">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_init">#</a>
+		<code>init( )</code>
+
+		<div class="description short">
+			
+<p>Initialize the adapter</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Initialize the adapter</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="save" id="_save">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_save">#</a>
+		<code>save( <span>mixed <var>$file</var></span>, <span>mixed <var>$type</var> = <span class="php-quote">'guess'</span></span>, <span>mixed <var>$quality</var> = <span class="php-num">85</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Save the file to a given output</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Save the file to a given output</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code>get( <span>mixed <var>$type</var> = <span class="php-quote">'guess'</span></span>, <span>mixed <var>$quality</var> = <span class="php-num">85</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the contents of the image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the contents of the image</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="width" id="_width">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_width">#</a>
+		<code>width( )</code>
+
+		<div class="description short">
+			
+<p>Image width</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Image width</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="height" id="_height">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_height">#</a>
+		<code>height( )</code>
+
+		<div class="description short">
+			
+<p>Image height</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Image height</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__toString" id="___toString">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___toString">#</a>
+		<code>__toString( )</code>
+
+		<div class="description short">
+			
+<p>Tostring defaults to jpeg</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Tostring defaults to jpeg</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="html" id="_html">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_html">#</a>
+		<code>html( <span>mixed <var>$title</var> = <span class="php-quote">''</span></span>, <span>mixed <var>$type</var> = <span class="php-quote">'jpg'</span></span>, <span>mixed <var>$quality</var> = <span class="php-num">85</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returning basic html code for this image</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returning basic html code for this image</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="inline" id="_inline">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_inline">#</a>
+		<code>inline( <span>mixed <var>$type</var> = <span class="php-quote">'jpg'</span></span>, <span>mixed <var>$quality</var> = <span class="php-num">85</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns the Base64 inlinable representation</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the Base64 inlinable representation</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="open" id="_open">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_open">#</a>
+		<code>open( <span>mixed <var>$file</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Creates an instance, usefull for one-line chaining</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates an instance, usefull for one-line chaining</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="create" id="_create">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_create">#</a>
+		<code>create( <span>mixed <var>$width</var></span>, <span>mixed <var>$height</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Creates an instance of a new resource</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates an instance of a new resource</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fromData" id="_fromData">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fromData">#</a>
+		<code>fromData( <span>mixed <var>$data</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Creates an instance of image from its data</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates an instance of image from its data</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fromResource" id="_fromResource">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fromResource">#</a>
+		<code>fromResource( <span>mixed <var>$resource</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Creates an instance of image from resource</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates an instance of image from resource</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Nedo.Core.html#methods">Nedo\Core</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nedo.Core.html#_clearAssetCache">clearAssetCache()</a>, 
+			<a href="class-Nedo.Core.html#_client_resolution">client_resolution()</a>, 
+			<a href="class-Nedo.Core.html#_current_page_url">current_page_url()</a>, 
+			<a href="class-Nedo.Core.html#_defaulWelcometMailTemplate">defaulWelcometMailTemplate()</a>, 
+			<a href="class-Nedo.Core.html#_defaultRecoverMailTemplate">defaultRecoverMailTemplate()</a>, 
+			<a href="class-Nedo.Core.html#_fdirect">fdirect()</a>, 
+			<a href="class-Nedo.Core.html#_formatDate">formatDate()</a>, 
+			<a href="class-Nedo.Core.html#_generateRandID">generateRandID()</a>, 
+			<a href="class-Nedo.Core.html#_getDateOnly">getDateOnly()</a>, 
+			<a href="class-Nedo.Core.html#_getNumbersOnly">getNumbersOnly()</a>, 
+			<a href="class-Nedo.Core.html#_getRowById">getRowById()</a>, 
+			<a href="class-Nedo.Core.html#_getServerInfo">getServerInfo()</a>, 
+			<a href="class-Nedo.Core.html#_getSettings">getSettings()</a>, 
+			<a href="class-Nedo.Core.html#_getSkinArray">getSkinArray()</a>, 
+			<a href="class-Nedo.Core.html#_getUniqueCode">getUniqueCode()</a>, 
+			<a href="class-Nedo.Core.html#_isShareUrI">isShareUrI()</a>, 
+			<a href="class-Nedo.Core.html#_push_after">push_after()</a>, 
+			<a href="class-Nedo.Core.html#_push_before">push_before()</a>, 
+			<a href="class-Nedo.Core.html#_resolutions">resolutions()</a>, 
+			<a href="class-Nedo.Core.html#_returnJson">returnJson()</a>, 
+			<a href="class-Nedo.Core.html#_sendSingleMail">sendSingleMail()</a>, 
+			<a href="class-Nedo.Core.html#_setSettings">setSettings()</a>, 
+			<a href="class-Nedo.Core.html#_ucfirstStr">ucfirstStr()</a>, 
+			<a href="class-Nedo.Core.html#_versionCheck">versionCheck()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="cacheDir" id="$cacheDir">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+<var>$cacheDir</var>		</td>
+		<td class="value"><code><span class="php-quote">'cache'</span></code></td>
+		<td class="description"><div>
+			<a href="#$cacheDir" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Direcory to use for file caching</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Direcory to use for file caching</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="adapter" id="$adapter">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Nedo.Image.Adapter.AdapterInterface.html">Nedo\Image\Adapter\AdapterInterface</a></code>
+		</code></td>
+
+		<td class="name">
+<var>$adapter</var>		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$adapter" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Internal adapter</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Internal adapter</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="prettyName" id="$prettyName">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+<var>$prettyName</var>		</td>
+		<td class="value"><code><span class="php-quote">''</span></code></td>
+		<td class="description"><div>
+			<a href="#$prettyName" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Pretty name for the image</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Pretty name for the image</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="prettyPrefix" id="$prettyPrefix">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+<var>$prettyPrefix</var>		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$prettyPrefix" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="hash" id="$hash">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+<var>$hash</var>		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$hash" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Transformations hash</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Transformations hash</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="source" id="$source">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+<var>$source</var>		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$source" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The image source</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The image source</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="types" id="$types">
+		<td class="attributes"><code>
+			public static 
+			array
+		</code></td>
+
+		<td class="name">
+<var>$types</var>		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(
+    <span class="php-quote">'jpg'</span>   =&gt; <span class="php-quote">'jpeg'</span>,
+    <span class="php-quote">'jpeg'</span>  =&gt; <span class="php-quote">'jpeg'</span>,
+    <span class="php-quote">'png'</span>   =&gt; <span class="php-quote">'png'</span>,
+    <span class="php-quote">'gif'</span>   =&gt; <span class="php-quote">'gif'</span>,
+)</code></td>
+		<td class="description"><div>
+			<a href="#$types" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Supported types</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Supported types</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="actualext" id="$actualext">
+		<td class="attributes"><code>
+			private  
+			mixed
+		</code></td>
+
+		<td class="name">
+<var>$actualext</var>		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$actualext" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="fallback" id="$fallback">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+<var>$fallback</var>		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$fallback" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Fallback image</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Fallback image</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="useFallbackImage" id="$useFallbackImage">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+<var>$useFallbackImage</var>		</td>
+		<td class="value"><code><span class="php-keyword1">true</span></code></td>
+		<td class="description"><div>
+			<a href="#$useFallbackImage" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Use fallback image</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Use fallback image</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="cache" id="$cache">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+<var>$cache</var>		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$cache" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Cache system</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Cache system</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="operations" id="$operations">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+<var>$operations</var>		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$operations" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Operations array</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Operations array</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Nedo.Core.html#properties">Nedo\Core</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nedo.Core.html#$ajaxReq"><var>$ajaxReq</var></a>, 
+			<a href="class-Nedo.Core.html#$cTable"><var>$cTable</var></a>, 
+			<a href="class-Nedo.Core.html#$dTable"><var>$dTable</var></a>, 
+			<a href="class-Nedo.Core.html#$fTable"><var>$fTable</var></a>, 
+			<a href="class-Nedo.Core.html#$gTable"><var>$gTable</var></a>, 
+			<a href="class-Nedo.Core.html#$jsonE"><var>$jsonE</var></a>, 
+			<a href="class-Nedo.Core.html#$jsonEA"><var>$jsonEA</var></a>, 
+			<a href="class-Nedo.Core.html#$jsonMsg"><var>$jsonMsg</var></a>, 
+			<a href="class-Nedo.Core.html#$msgs"><var>$msgs</var></a>, 
+			<a href="class-Nedo.Core.html#$pTable"><var>$pTable</var></a>, 
+			<a href="class-Nedo.Core.html#$sID"><var>$sID</var></a>, 
+			<a href="class-Nedo.Core.html#$sTable"><var>$sTable</var></a>, 
+			<a href="class-Nedo.Core.html#$settings"><var>$settings</var></a>, 
+			<a href="class-Nedo.Core.html#$showMsg"><var>$showMsg</var></a>, 
+			<a href="class-Nedo.Core.html#$uTable"><var>$uTable</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Closhare API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
